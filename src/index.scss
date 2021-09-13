@@ -19,16 +19,39 @@ header {
   font-size: 3rem;
   background-color: lightblue;
   text-shadow: black;
+  border: lightgray solid 0.2rem;
 }
 .buttons button {
   font-family: 'Shadows Into Light', cursive;
-  justify-content: center;
+  background-color: darkgray;
   margin: 0.28rem;
+  box-shadow: black 1rem solid;
+  color: white;
+  font-size: 1rem;
 }
-.firstletter {
+.buttons button:hover {
+}
+.letters {
   text-align: center;
-}
+  display: flex;
 
+  justify-content: space-between;
+  font-size: 2rem;
+}
+img .firstimage {
+  text-align: center;
+  border: black;
+}
+footer {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: lightblue;
+  border: lightgray solid 0.2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: 'Delius Swash Caps', cursive;
+}
 html,
 body {
   margin: 0;

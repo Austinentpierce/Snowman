@@ -18,7 +18,7 @@ export function App() {
 
       <img className="firstimage" src={step0} width="450" height="450"></img>
       <section>
-        <ul>
+        <ul className="letters">
           <li className="firstletter">_</li>
           <li className="secondletter">_</li>
           <li className="thirdletter">_</li>
@@ -56,6 +56,7 @@ export function App() {
         <button>Y</button>
         <button>Z</button>
       </section>
+      <footer>Created by Austin Pierce</footer>
     </main>
   )
 }
