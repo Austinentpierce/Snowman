@@ -38,9 +38,12 @@ header {
   justify-content: space-between;
   font-size: 2rem;
 }
-img .firstimage {
-  text-align: center;
-  border: black;
+main img .images {
+  display: flex;
+  border: lightseagreen solid 5rem;
+}
+section ul {
+  list-style: none;
 }
 footer {
   font-size: 2rem;
@@ -58,7 +61,7 @@ body {
 }
 .wrapper {
   width: 100vw;
-  height: 100vh;
+
   background: radial-gradient(
     farthest-corner at 30vw 20vh,
     #7397a1 1%,
@@ -113,7 +116,7 @@ $s3: '';
 }
 .snow {
   border-radius: 50%;
-  opacity: 0.8;
+  opacity: 0.3;
   position: absolute;
   top: -100vh;
   animation-name: fall;

@@ -12,22 +12,25 @@ export function App() {
         <div className="snow layer3 a"></div>
         <div className="snow layer3"></div>
       </div>
+
       <header>
         <div>The Snowman Game</div>
       </header>
-
-      <img className="firstimage" src={step0} width="450" height="450"></img>
+      <div className="images">
+        <img className="firstimage" src={step0} width="450" height="450"></img>
+      </div>
       <section>
         <ul className="letters">
-          <li className="firstletter">_</li>
-          <li className="secondletter">_</li>
-          <li className="thirdletter">_</li>
-          <li className="fourthletter">_</li>
-          <li className="fifthletter">_</li>
-          <li className="sixthletter">_</li>
-          <li className="seventhletter">_</li>
+          <li className="firstletter">__</li>
+          <li className="secondletter">__</li>
+          <li className="thirdletter">__</li>
+          <li className="fourthletter">__</li>
+          <li className="fifthletter">__</li>
+          <li className="sixthletter">__</li>
+          <li className="seventhletter">__</li>
         </ul>
       </section>
+
       <section className="buttons">
         <button>A</button>
         <button>B</button>
@@ -56,6 +59,7 @@ export function App() {
         <button>Y</button>
         <button>Z</button>
       </section>
+
       <footer>Created by Austin Pierce</footer>
     </main>
   )
