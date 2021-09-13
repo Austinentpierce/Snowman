@@ -1,4 +1,5 @@
 import React from 'react'
+import step0
 
 export function App() {
   return (
@@ -6,6 +7,7 @@ export function App() {
       <header>
         <div>The Snowman Game</div>
       </header>
+      <img src=
     </main>
   )
 }
