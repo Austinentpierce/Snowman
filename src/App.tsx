@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import step0 from './images/step_0.png'
-import step1 from './images/step_1.png'
-import step2 from './images/step_2.png'
-import step3 from './images/step_3.png'
-import step4 from './images/step_4.png'
-import step5 from './images/step_5.png'
-import step6 from './images/step_6.png'
-import step7 from './images/step_7.png'
+import snowmanpicture1 from './images/step_1.png'
+import snowmanpicture2 from './images/step_2.png'
+import snowmanpicture3 from './images/step_3.png'
+import snowmanpicture4 from './images/step_4.png'
+import snowmanpicture5 from './images/step_5.png'
+import psnowmanicture6 from './images/step_6.png'
+import snowmanpicture7 from './images/step_7.png'
 import words from './words.json'
 
 export function App() {
@@ -66,7 +66,7 @@ export function App() {
       setFullWord(newFullWord)
     }
   }
-
+  function theSnowManPictures() {}
   return (
     <main>
       <div className="wrapper">
