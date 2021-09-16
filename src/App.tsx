@@ -108,6 +108,7 @@ export function App() {
       {ALPHABET.map(function (letter) {
         return (
           <button
+            className="letterbuttons"
             key={letter}
             onClick={function () {
               clickOnLetter(letter)
@@ -118,7 +119,9 @@ export function App() {
           </button>
         )
       })}
-      <div>The letters you have guessed are: {guessedLetters}</div>
+      <div className="lettersguessed">
+        The letters you have guessed are: {guessedLetters}
+      </div>
       <button onClick={handleBrandNewGame}>Create a brand new game</button>
       <footer>Created by a Suncoast Developer</footer>
     </main>

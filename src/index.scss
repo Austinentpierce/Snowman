@@ -29,14 +29,23 @@ header {
   color: white;
   font-size: 1rem;
 }
-.buttons button:hover {
+.letterbuttons {
+  align-items: center;
 }
+
 .letters {
   text-align: center;
   display: flex;
 
   justify-content: space-between;
   font-size: 2rem;
+}
+.images {
+  text-align: center;
+  background-color: skyblue;
+}
+.lettersguessed {
+  text-align: center;
 }
 main img .images {
   display: flex;
