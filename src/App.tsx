@@ -67,7 +67,7 @@ export function App() {
     }
   }
   function theSnowManPictures() {
-    switch (playerScore) {
+    switch (usersScore) {
       case 0:
         return snowmanpicture0
       case 1:
@@ -103,25 +103,7 @@ export function App() {
       <div className="images">
         <img src={theSnowManPictures()} />
       </div>
-      <section>
-        <ul className="letters">
-          <div>{guessedLetters}</div>
-          <li className="firstletter">__</li>
-          <div>{guessedLetters}</div>
-          <li className="secondletter">__</li>
-          <div>{guessedLetters}</div>
-          <li className="thirdletter">__</li>
-          <div>{guessedLetters}</div>
-          <li className="fourthletter">__</li>
-          <div>{guessedLetters}</div>
-          <li className="fifthletter">__</li>
-          <div>{guessedLetters}</div>
-          <li className="sixthletter">__</li>
-          <div>{guessedLetters}</div>
-          <li className="seventhletter">__</li>
-          <div>{guessedLetters}</div>
-        </ul>
-      </section>
+      <div className="guessedword">{fullWord}</div>
       {ALPHABET.map(function () {
         return (
           <button
@@ -135,6 +117,9 @@ export function App() {
           </button>
         )
       })}
+      <div>The letters you have guessed are {guessedLetters}</div>
+      <button onClick={handleBrandNewGame}>Create a brand new game</button>
+      <footer>Created by a Suncoast Developer</footer>
     </main>
   )
 }
