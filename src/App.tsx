@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import step0 from './images/step_0.png'
+import snowmanpicture0 from './images/step_0.png'
 import snowmanpicture1 from './images/step_1.png'
 import snowmanpicture2 from './images/step_2.png'
 import snowmanpicture3 from './images/step_3.png'
 import snowmanpicture4 from './images/step_4.png'
 import snowmanpicture5 from './images/step_5.png'
-import psnowmanicture6 from './images/step_6.png'
+import snowmanpicture6 from './images/step_6.png'
 import snowmanpicture7 from './images/step_7.png'
 import words from './words.json'
 
@@ -66,7 +66,26 @@ export function App() {
       setFullWord(newFullWord)
     }
   }
-  function theSnowManPictures() {}
+  function theSnowManPictures() {
+    switch (playerScore) {
+      case 0:
+        return snowmanpicture0
+      case 1:
+        return snowmanpicture1
+      case 2:
+        return snowmanpicture2
+      case 3:
+        return snowmanpicture3
+      case 4:
+        return snowmanpicture4
+      case 5:
+        return snowmanpicture5
+      case 6:
+        return snowmanpicture6
+      case 7:
+        return snowmanpicture7
+    }
+  }
   return (
     <main>
       <div className="wrapper">
@@ -82,7 +101,7 @@ export function App() {
         <div>The Snowman Game</div>
       </header>
       <div className="images">
-        <img className="firstimage" src={step0} width="450" height="450"></img>
+        <img src={theSnowManPictures()} />
       </div>
       <section>
         <ul className="letters">
