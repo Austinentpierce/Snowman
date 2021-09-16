@@ -9,9 +9,7 @@ import step6 from './images/step_6.png'
 import step7 from './images/step_7.png'
 import words from './words.json'
 
-
 export function App() {
-
   const ALPHABET = [
     'A',
     'B',
@@ -40,12 +38,10 @@ export function App() {
     'Y',
     'Z',
   ]
-
-  const randomizedWord = 
-  const [guessedLetters, setGuessedLetters] = useState(['A', 'V'])
-  const secretWord = words[0]
-
-  console.log(secretWord)
+  const [usersScore, setUsersScore] = useState(0)
+  const randomizedWord = words[Math.floor(Math.random() * words.length)]
+  const [guessedLetters, setGuessedLetters] = useState([''])
+  const [secretWord, setSecretWord] = useState(randomizedWord)
 
   function clickOnLetter(letter: string) {
     const newValueForGuessedLetters = [...guessedLetters, letter]
@@ -105,5 +101,3 @@ export function App() {
     </main>
   )
 }
-
-
