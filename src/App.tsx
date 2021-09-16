@@ -86,6 +86,7 @@ export function App() {
         return snowmanpicture7
     }
   }
+
   return (
     <main>
       <div className="wrapper">
@@ -101,10 +102,10 @@ export function App() {
         <div>The Snowman Game</div>
       </header>
       <div className="images">
-        <img src={theSnowManPictures()} />
+        <img src={theSnowManPictures()} height="300" width="300" />
       </div>
       <div className="guessedword">{fullWord}</div>
-      {ALPHABET.map(function () {
+      {ALPHABET.map(function (letter) {
         return (
           <button
             key={letter}
@@ -117,7 +118,7 @@ export function App() {
           </button>
         )
       })}
-      <div>The letters you have guessed are {guessedLetters}</div>
+      <div>The letters you have guessed are: {guessedLetters}</div>
       <button onClick={handleBrandNewGame}>Create a brand new game</button>
       <footer>Created by a Suncoast Developer</footer>
     </main>
