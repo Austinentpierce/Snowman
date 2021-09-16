@@ -38,15 +38,33 @@ export function App() {
     'Y',
     'Z',
   ]
+
+  async function handleBrandNewGame() {
+    setGuessedLetters([])
+    setUsersScore(0)
+    setSecretWord(randomizedWord)
+    setFullWord('_______')
+  }
+
   const [usersScore, setUsersScore] = useState(0)
   const randomizedWord = words[Math.floor(Math.random() * words.length)]
   const [guessedLetters, setGuessedLetters] = useState([''])
   const [secretWord, setSecretWord] = useState(randomizedWord)
+  const [fullWord, setFullWord] = useState('_______')
 
   function clickOnLetter(letter: string) {
-    const newValueForGuessedLetters = [...guessedLetters, letter]
+    setGuessedLetters([...guessedLetters, letter])
 
-    setGuessedLetters(newValueForGuessedLetters)
+    if (secretWord.includes(letter)) {
+      setUsersScore(usersScore + 1)
+      let newFullWord = ''
+      for (let index = 0; index < secretWord.length; index + 1) {
+        secretWord[index] === letter
+          ? (newFullWord = newFullWord.concat(letter))
+          : (newFullWord = newFullWord.concat(fullWord[index]))
+      }
+      setFullWord(newFullWord)
+    }
   }
 
   return (
