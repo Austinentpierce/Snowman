@@ -18,8 +18,10 @@ header {
   text-align: center;
   font-size: 3rem;
   background-color: lightblue;
-  text-shadow: black;
+  text-shadow: black 0.15rem 0.15rem;
   border: lightgray solid 0.2rem;
+  color: gray;
+  box-shadow: black 0.2rem 0.2rem;
 }
 .buttons button {
   font-family: 'Shadows Into Light', cursive;
@@ -30,7 +32,9 @@ header {
   font-size: 1rem;
 }
 .letterbuttons {
-  align-items: center;
+  justify-content: center;
+  box-shadow: black 0.25rem 0.25rem;
+  margin: 0.1rem;
 }
 
 .letters {
@@ -42,27 +46,35 @@ header {
 }
 .images {
   text-align: center;
-  background-color: skyblue;
 }
 .lettersguessed {
   text-align: center;
+  font-size: 1.25rem;
+  text-decoration: underline;
+  margin: 1.5rem;
+}
+.guessedword {
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 main img .images {
   display: flex;
-  border: lightseagreen solid 5rem;
+  box-shadow: black 0.2rem 0.2rem;
 }
 section ul {
   list-style: none;
 }
 footer {
   font-size: 2rem;
-  margin-top: 1rem;
+  margin-top: 13rem;
   text-align: center;
   background-color: lightblue;
   border: lightgray solid 0.2rem;
   margin-left: 2rem;
   margin-right: 2rem;
   font-family: 'Delius Swash Caps', cursive;
+  color: gray;
+  text-shadow: black 0.11rem 0.11rem;
 }
 html,
 body {
