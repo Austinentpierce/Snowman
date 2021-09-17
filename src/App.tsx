@@ -122,7 +122,15 @@ export function App() {
       <div className="lettersguessed">
         The letters you have guessed are: {guessedLetters}
       </div>
-      <button onClick={handleBrandNewGame}>Create a brand new game</button>
+      <button className="newgame" onClick={handleBrandNewGame}>
+        Create a brand new game
+      </button>
+      <div className="snowflake">
+        <i className="far fa-3x fa-snowflake"></i>
+        <i className="far fa-3x fa-snowflake"></i>
+        <i className="far fa-3x fa-snowflake"></i>
+        <i className="far fa-3x fa-snowflake"></i>
+      </div>
       <footer>Created by a Suncoast Developer</footer>
     </main>
   )
