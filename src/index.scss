@@ -58,12 +58,19 @@ header {
   box-shadow: black 0.125rem 0.125rem;
   border-radius: 0.8rem;
   border: black 0.15rem solid;
+  color: gray;
+}
+.newgame:hover {
+  color: black;
 }
 .snowflake {
   text-align: center;
   color: white;
   text-shadow: black 0.15rem 0.15rem;
   margin: 1rem;
+}
+.snowflake:hover {
+  font-size: 2rem;
 }
 footer {
   font-size: 2rem;

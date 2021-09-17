@@ -11,32 +11,32 @@ import words from './words.json'
 
 export function App() {
   const ALPHABET = [
-    'A',
-    'B',
-    'C',
-    'D',
-    'E',
-    'F',
-    'G',
-    'H',
-    'I',
-    'J',
-    'K',
-    'L',
-    'M',
-    'N',
-    'O',
-    'P',
-    'Q',
-    'R',
-    'S',
-    'T',
-    'U',
-    'V',
-    'W',
-    'X',
-    'Y',
-    'Z',
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z',
   ]
 
   async function handleBrandNewGame() {
@@ -58,7 +58,7 @@ export function App() {
     if (secretWord.includes(letter)) {
       setUsersScore(usersScore + 1)
       let newFullWord = ''
-      for (let index = 0; index < secretWord.length; index + 1) {
+      for (let index = 0; index < secretWord.length; index++) {
         secretWord[index] === letter
           ? (newFullWord = newFullWord.concat(letter))
           : (newFullWord = newFullWord.concat(fullWord[index]))
@@ -123,7 +123,7 @@ export function App() {
         The letters you have guessed are: {guessedLetters}
       </div>
       <button className="newgame" onClick={handleBrandNewGame}>
-        Create a brand new game
+        Create a New Game
       </button>
       <div className="snowflake">
         <i className="far fa-3x fa-snowflake"></i>
